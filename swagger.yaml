@@ -13,8 +13,6 @@ info:
 host: "verify.mrlewishotels.com"
 basePath: "/api"
 tags:
-- name: "CMS (Strapi)"
-  description: "Connecting to Strapi endpoint to retreive components to render."
 - name: "Login"
   description: "Send login credentials to API which triggers a code to be sent to the user's phone."
 - name: "Reservations"
