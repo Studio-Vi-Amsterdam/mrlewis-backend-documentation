@@ -49,6 +49,8 @@ paths:
           description: "Successful operation"
         400:
           description: "Invalid status value"
+      security:
+        - bearerAuth: []
   /api/customers/check-code:
     post:
       tags:
@@ -75,6 +77,8 @@ paths:
               $ref: "#/definitions/checkCodeResponse"
         400:
           description: "Invalid tag value"
+      security:
+        - bearerAuth: []
   /api/customers/{cursomerId}/get-reservations:
     post:
       tags:
@@ -96,6 +100,8 @@ paths:
           description: "Successful operation"
         400:
           description: "Invalid tag value"
+      security:
+        - bearerAuth: []
   /api/customers/{reservationId}/issue-key:
     post:
       tags:
@@ -117,6 +123,8 @@ paths:
           description: "Successful operation"
         400:
           description: "Invalid tag value"
+      security:
+        - bearerAuth: []
 components:
   securitySchemes:
     bearerAuth:
